@@ -1,5 +1,6 @@
 package com.example.walmart
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -19,7 +20,11 @@ class ShoppingActivity : AppCompatActivity() {
     fun onClickHandler(view: View) {
 
         when (view.getId()){
-            R.id.imageElectronics -> Toast.makeText(this, "You have chosen the Electronics category of shopping", Toast.LENGTH_LONG).show()
+            R.id.imageElectronics -> {
+                Toast.makeText(this, "You have chosen the Electronics category of shopping", Toast.LENGTH_LONG).show()
+                val plistIntent = Intent(this, ProductList::class.java)
+                startActivity(plistIntent)
+            }
             R.id.imageClothing -> Toast.makeText(this, "You have chosen the Clothing category of shopping", Toast.LENGTH_LONG).show()
             R.id.imageBeauty -> Toast.makeText(this, "You have chosen the Beauty category of shopping", Toast.LENGTH_LONG).show()
             R.id.imageFood -> Toast.makeText(this, "You have chosen the Food category of shopping", Toast.LENGTH_LONG).show()
