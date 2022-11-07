@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="question1">1. Which file extension is used to save Kotlin files?</string>
+    <string name="question2">2. Select the correct way to handle null safety in Kotlin</string>
+    <string name="radioChoiceA">.java</string>
+    <string name="radioChoiceB">.kot</string>
+    <string name="radioChoiceC">.kt</string>
+    <string name="chkboxChoiceA">Safe Calls (?.)</string>
+    <string name="chkboxChoiceB">Differentiate between nullable references and non-nullable
+                                 references</string>
+    <string name="chkboxChoiceC">Elvis Operator ( ?:)</string>
+</resources>

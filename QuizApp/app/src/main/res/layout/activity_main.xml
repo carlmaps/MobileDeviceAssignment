@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvQuestion1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/question1" />
+
+    <RadioGroup
+        android:id="@+id/rgQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rgA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioChoiceA" />
+
+        <RadioButton
+            android:id="@+id/rgB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioChoiceB" />
+
+        <RadioButton
+            android:id="@+id/rgC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioChoiceC" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvQuestion2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="193dp"
+        android:text="@string/question2" />
+
+    <CheckBox
+        android:id="@+id/chkboxChoiceA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="225dp"
+        android:text="@string/chkboxChoiceA"
+        />
+
+    <CheckBox
+        android:id="@+id/chkboxChoiceB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="277dp"
+        android:text="@string/chkboxChoiceB"
+        />
+
+    <CheckBox
+        android:id="@+id/chkboxChoiceC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="330dp"
+        android:text="@string/chkboxChoiceC"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom">
+        <Button
+            android:id="@+id/btnReset"
+            android:text="Reset"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"/>
+        <Button
+            android:id="@+id/btnSubmit"
+            android:text="Submit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginEnd="3dp"/>
+    </LinearLayout>
+</RelativeLayout>
